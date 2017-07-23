@@ -23,9 +23,9 @@ $ npm start:production
 The base app is cloned from [React-Boilerplate app](https://github.com/react-boilerplate/react-boilerplate). And keeps most of its structure/configuration. It also contains the a handful of components that are not currently used but are reusable in nature so can potentially be used in near future (like H2, H3 etc).
 
 ### Open source components
-The search app uses the following open source react components
+
 | Component | Used in component | For
-| ------ | ------ | ------ |
+| ------    | ------            | ------ |
 | [airport-codes](https://github.com/L1fescape/airport-codes) | LocationPicker | For lack of open apis that support searching for airports/cities etc, the app uses this npm module which has a list of most airports, with their codes, city, country etc.
 | [react-datepicker](https://github.com/Hacker0x01/react-datepicker) | DateTimePicker | Picker for pick up and drop off dates |
 | [react-select](https://github.com/JedWatson/react-select) | LocationPicker, TimePicker | Picker for pickup location and for a time picker renders time in half hour intervals. (Half hour intervals was a requirement for the API)
@@ -36,18 +36,21 @@ The search app uses the following open source react components
 
 Features supported:
 - A basic search for car rentals available through Hotwire for certain locations including airports and some train stations.
-- The pickup dates default to +1 day from the time of search to accomodate some of the api constraints.
-- The drop off dates default to +2 days from the time of search to accomodate some of the api constraints.
+- Input constraints like
+    - the pickup dates default to +1 day from the time of search to accomodate some of the api constraints.
+    - the drop off dates default to +2 days from the time of search to accomodate some of the api constraints.
+    - change in pick up dates updates drop off dates to allow only valid date ranges
 
 #### Future feature list
 
 | Feature | Details
 | ------ | ------ |
-| Robust api inputs | There are some restrictions from the Hotwire api on how long the rental can be etc. These need to be added to the form validation.|
 | Client side input validation | Currently the "Search" button is disabled until all inputs are filled which is not findable.
+| Better error reporting | Report back error based on the error code/message recieved from the api. "For now its just a placeholder message".
 | More detail in the list view | Add icons/deeplinks/feature list to the list. Style list to card view.
 | Date picker/drop down picker optimization for mobile | Use native pickers instead for "touch"
 | Search for locations using apis | Instead of using the airport-codes npm module, which will need to be kept upto date, replace the search with an open source api.
+| Enable localization | The support for english and german is already built in (from the Boilerplate). Need to add messages/expose the locale picker etc.
 
 ### Todos
  - Increase test coverage
