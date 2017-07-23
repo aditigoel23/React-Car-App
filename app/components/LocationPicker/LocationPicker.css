@@ -1,0 +1,5 @@
+/* Override certain styles from the default stylesheet of Select component */
+
+.VirtualizedSelectOption.VirtualizedSelectFocusedOption {
+    white-space: nowrap;
+}

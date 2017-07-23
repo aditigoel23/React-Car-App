@@ -1,0 +1,8 @@
+{
+  "name": "Rental Car App",
+  "icons": [],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFFFFF"
+}
