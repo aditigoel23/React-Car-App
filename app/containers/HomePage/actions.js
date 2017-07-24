@@ -26,7 +26,7 @@ export function changePickUpDate(dateTime) {
 export function changePickUpTime(dateTime) {
   return {
     type: constants.CHANGE_PICKUP_TIME,
-    dateTime
+    dateTime,
   };
 }
 

@@ -1,27 +1,27 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Form from '../Form';
+import Wrapper from '../Wrapper';
 
-describe('<Form />', () => {
-  it('should render an <form> tag', () => {
-    const renderedComponent = shallow(<Form />);
-    expect(renderedComponent.type()).toEqual('form');
+describe('<Wrapper />', () => {
+  it('should render an <div> tag', () => {
+    const renderedComponent = shallow(<Wrapper />);
+    expect(renderedComponent.type()).toEqual('div');
   });
 
   it('should have a className attribute', () => {
-    const renderedComponent = shallow(<Form />);
+    const renderedComponent = shallow(<Wrapper />);
     expect(renderedComponent.prop('className')).toBeDefined();
   });
 
   it('should adopt a valid attribute', () => {
     const id = 'test';
-    const renderedComponent = shallow(<Form id={id} />);
+    const renderedComponent = shallow(<Wrapper id={id} />);
     expect(renderedComponent.prop('id')).toEqual(id);
   });
 
   it('should not adopt an invalid attribute', () => {
-    const renderedComponent = shallow(<Form attribute={'test'} />);
+    const renderedComponent = shallow(<Wrapper attribute={'test'} />);
     expect(renderedComponent.prop('attribute')).toBeUndefined();
   });
 });

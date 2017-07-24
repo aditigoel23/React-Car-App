@@ -25,7 +25,7 @@ function homePageReducer(state = initialState, action) {
         .set('dropoffTime', action.dropOffTime);
     case constants.CHANGE_PICKUP_TIME:
       return state
-        .set('pickupTime', action.dateTime)
+        .set('pickupTime', action.dateTime);
     case constants.CHANGE_DROPOFF_TIME:
       return state
         .set('dropoffTime', action.dateTime);

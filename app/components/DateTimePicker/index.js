@@ -51,8 +51,8 @@ export default class DateTimePicker extends React.Component {
 }
 
 DateTimePicker.propTypes = {
-  minDate: React.propTypes.object,
-  maxDate: React.propTypes.object,
+  minDate: React.PropTypes.object,
+  maxDate: React.PropTypes.object,
   value: React.PropTypes.object,
   label: React.PropTypes.string,
   onChange: React.PropTypes.func,

@@ -1,7 +1,3 @@
-/**
- * Created by agoel on 7/18/17.
- */
-
 import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
