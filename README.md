@@ -7,16 +7,17 @@ Dev environment set up
 
 ```sh
 $ git clone
-$ cd RentalApp
-$ npm run setup
+$ cd React-Car-App
+$ npm install (This may take some time)
 $ npm start
 ```
-This should start the node server at http://localhost:3000.
+This should start the node server at http://localhost:3000. Dev build starts with hot reload turned on.
 
 To start the production build
 ```sh
-$ npm start:production
+$ npm run start:production
 ```
+This will run the the lint and test tasks before starting the server at http://localhost:3000.
 
 ## Tech
 
