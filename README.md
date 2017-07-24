@@ -1,6 +1,6 @@
 # Rental Car App
 
-This is a Car rental search React app. The app renders a basic form that accepts a drop off location, pick up and drop off times and returns search results using [Hotwire car shopping api](http://developer.hotwire.com/docs/read/Rental_Car_Shopping_API). At this time the app implements just an MVP version of the search. See [Features](#Features)
+This is a Car rental search React app. The app renders a basic form that accepts a drop off location, pick up and drop off times and returns search results using [Hotwire car shopping api](http://developer.hotwire.com/docs/read/Rental_Car_Shopping_API). At this time the app implements just an MVP version of the search. See [Features](#features)
 
 ## Installation
 Dev environment set up
